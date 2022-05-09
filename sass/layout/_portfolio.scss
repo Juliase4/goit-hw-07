@@ -35,7 +35,7 @@
     display: block;
     transition: box-shadow var(--typical-effect-time) var(--typical-transition-timing-function);
 
-    &:hover, &:focus {
+&:hover, &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -48,9 +48,7 @@
 }
 
 .filters-item-description {
-    font-size: 18px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
+    @include font(18px, null, 1.5);
     padding: 63px 24px;
     height: 100%;
 
@@ -79,9 +77,6 @@
 
 /* filters-text */
 .filters-text {
-    font-size: 16px;
-    line-height: 1.8;
-    letter-spacing: 0.03em;
-
+    @include font(16px, null, 1.8);
     color: #757575;
 }

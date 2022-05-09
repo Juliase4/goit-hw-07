@@ -51,11 +51,8 @@
 
 /* Modal-title */
 .modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.1;
+    @include font(20px, 700, 1.1);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--header-color);
     margin-bottom: 12px;
 }
@@ -67,10 +64,8 @@
 
 /* Imput-text */
 .input-text {
+    @include font(12px, null, 1.2, 0.01em);
     display: block;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
     margin-bottom: 4px;
 
     color: #757575;
@@ -122,10 +117,7 @@
     resize: none;
 
     &::placeholder {
-            font-size: 14px;
-            line-height: 1.1;
-            letter-spacing: 0.01em;
-    
+            @include font(14px, null, 1.1, 0.01em);
             color: rgba(117, 117, 117, 0.5);
         }
 
@@ -146,12 +138,9 @@
 
 /* modal-check-text */
 .modal-check-text {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+    @include font(14px, null, 1.7);
     display: flex;
     align-items: center;
-
     color: #757575;
 }
 

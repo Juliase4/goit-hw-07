@@ -2,10 +2,8 @@
 .modal-btn {
     font-family: inherit;
     width: 200px;
-    font-size: 16px;
-    line-height: 1.9;
+    @include font(16px, null, 1.9, 0.06em);
     align-items: center;
-    letter-spacing: 0.06em;
     cursor: pointer;
     border: transparent;
     padding: 10px 32px;
@@ -24,10 +22,7 @@
 
 .menu-btn {
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
+    @include font(16px, 500, 1.6);
     padding: 6px 22px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -43,12 +38,9 @@
 }
 
 .footer-btn {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.8;
+    @include font(16px, 700, 1.8, 0.06em);
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
     cursor: pointer;
 
     color: var(--second-color);

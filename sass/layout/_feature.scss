@@ -25,9 +25,7 @@
     }
 
 &__text {
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
+    @include font(14px, null, 1.7);
     }
 }
 

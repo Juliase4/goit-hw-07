@@ -12,8 +12,10 @@
         }
 }
 
-.soc-list--left+.soc-list--left {
-    margin-left: 10px;
+.soc-list--left {
+    & + & {
+            margin-left: 10px;
+        }
 }
 
 .soc-list__link--light {

@@ -1,7 +1,5 @@
 .title {
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    @include font(36px, null);
 }
 
 .title--light {
@@ -14,10 +12,7 @@
 
 /* feature-list__title */
 .feature-list__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.1);
     margin-bottom: 10px;
 }
 
@@ -34,43 +29,29 @@
 }
 
 .customers-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 0.9;
+    @include font(36px, 700, 0.9);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: var(--typical-margin);
-
     color: var(--title-color);
 }
 
 /* filters-title */
 .filters-title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.0;
-    letter-spacing: 0.06em;
+    @include font(18px, 700, 2.0, 0.06em);
     margin-bottom: 4px;
 
     color: var(--title-color);
 }
 
 .footer-soc-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.1);
     text-transform: uppercase;
     margin-bottom: 20px;
-
     color: var(--second-color);
 }
 
 .newsletter-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
+    @include font(14px, 700, 1.1);
     text-transform: uppercase;
     margin-bottom: 20px;
 

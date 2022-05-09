@@ -32,9 +32,7 @@
     }
 
 &__text {
-        font-size: 16px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
+    @include font(16px, null);
         margin-bottom: 16px;
     }
 }

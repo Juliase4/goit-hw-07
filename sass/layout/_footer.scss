@@ -18,21 +18,17 @@
 
 .contact-list {
 &__link {
+    @include font(14px, null, 1.7);
         font-family: inherit;
         font-style: normal;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
 
         color: #FFFFFF;
     }
 
 &__mail, &__tel {
+    @include font(14px, null, 1.7);
         font-family: inherit;
         font-style: normal;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
 
         color: rgba(255, 255, 255, 0.6);
     }
@@ -47,7 +43,7 @@
 }
 
 .soc-list {
-&__item+.soc-list__item {
+&__item+&__item {
         margin-left: 10px;
     }
 
@@ -71,11 +67,9 @@
 }
 
 .online-input {
-    font-size: 16px;
-    line-height: 1.2;
+    @include font(16px, null);
     display: flex;
     align-items: center;
-    letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
     width: 358px;

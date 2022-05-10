@@ -36,7 +36,7 @@
 /* header-list__link */
 .header-list__link,
 .current {
-    color: var(--header-color);
+    color: $header-color;
     position: relative;
     transition: color var(--typical-effect-time) var(--typical-transition-timing-function);
 }
@@ -44,7 +44,7 @@
 .header-list__link:hover,
 .header-list__link:focus,
 .current {
-    color: var(--accent-color);
+    color: $accent-color;
 }
 
 .active::after {
@@ -67,23 +67,23 @@
             margin-left: var(--typical-margin);
         }
 
-    &__link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+    .connect__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
-            fill: #757575;
-            color: #757575;
-            transition: color var(--typical-effect-time) var(--typical-transition-timing-function);
-        }
+        fill: #757575;
+        color: #757575;
+        transition: color var(--typical-effect-time) var(--typical-transition-timing-function);
+    }
 }
 
 .connect__link :hover,
 .connect__link :focus,
 .connect :hover,
 .connect :focus {
-    color: var(--accent-color);
-    fill: var(--accent-color);
+    color: $accent-color;
+    fill: $accent-color;
 }
 
 /* connect__icon */

@@ -53,7 +53,7 @@
 .modal-title {
     @include font(20px, 700, 1.1);
     text-align: center;
-    color: var(--header-color);
+    color: $header-color;
     margin-bottom: 12px;
 }
 
@@ -89,7 +89,7 @@
     transition: border-color var(--typical-effect-time) var(--typical-transition-timing-function);
 
     &:focus {
-            border-color: var(--accent-color);
+            border-color: $accent-color;
         }
 }
 
@@ -101,7 +101,7 @@
     transform: translateY(-50%);
 
     .modal-input:focus+ & {
-            fill: var(--accent-color);
+            fill: $accent-color;
         }
 }
 
@@ -123,7 +123,7 @@
 
     &:focus {
         outline: none;
-        border-color: var(--accent-color);
+        border-color: $accent-color;
     }
 }
 
@@ -155,7 +155,7 @@
     .modal-check:checked+ & {
             content: '';
             border: transparent;
-            background-color: var(--accent-color);
+            background-color: $accent-color;
             background-image: url(../images/check.svg);
             border-radius: 2px;
             background-repeat: no-repeat;
@@ -165,7 +165,7 @@
 }
 
 .conditions-text {
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: underline;
 }
 

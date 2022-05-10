@@ -1,5 +1,5 @@
 .footer {
-    background: var(--footer-bg-color);
+    background: $footer-bg-color;
     padding-top: 60px;
     padding-bottom: 60px;
     .container {
@@ -17,44 +17,44 @@
 }
 
 .contact-list {
-&__link {
-    @include font(14px, null, 1.7);
+    .contact-list__link {
+        @include font(14px, null, 1.7);
         font-family: inherit;
         font-style: normal;
 
         color: #FFFFFF;
     }
 
-&__mail, &__tel {
-    @include font(14px, null, 1.7);
+    .contact-list__mail, .contact-list__tel {
+        @include font(14px, null, 1.7);
         font-family: inherit;
         font-style: normal;
 
         color: rgba(255, 255, 255, 0.6);
     }
 
-&__item {
+    .contact-list__item {
         margin-bottom: 9px;
     }
 
-&__item:last-child {
+    &__item:last-child {
         margin-bottom: 0;
     }
 }
 
 .soc-list {
-&__item+&__item {
+    .soc-list__item+.soc-list__item {
         margin-left: 10px;
     }
 
-&__link--dark {
+    .soc-list__link--dark {
         background-color: rgba(255, 255, 255, 0.1);
-        fill: var(--second-color);
+        fill: $second-color;
         transition: background-color var(--typical-effect-time) var(--typical-transition-timing-function);
     }
 
-&__link--dark:hover, &__link--dark:focus, &__link--dark:active {
-        background-color: var(--accent-color)
+    &__link--dark:hover, &__link--dark:focus, &__link--dark:active {
+        background-color: $accent-color;
     }
 }
 

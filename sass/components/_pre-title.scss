@@ -3,5 +3,5 @@
     @include font(16px, 500, 1.3);
     margin-bottom: 10px;
 
-    color: var(--title-color);
+    color: $title-color;
 }

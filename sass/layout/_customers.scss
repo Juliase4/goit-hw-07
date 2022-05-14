@@ -31,8 +31,6 @@
   }
 }
 
-.customers__item {
-  .customers__item + .customers__item {
-    margin-left: 30px;
-  }
+.customers__item + .customers__item {
+  margin-left: 30px;
 }
